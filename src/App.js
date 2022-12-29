@@ -1,44 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import { Main } from './Main';
+import Footer from './Footer'
+
 
 function App() {
-  return (
-    <body>
-      <header className='header'>
-        <h1 className='title-text'>
-          Photo <p>Gallery</p>
-        </h1>
-      </header>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-      </section>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-
-      </section>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-
-      </section>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-
-      </section>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-
-      </section>
-      <section className='section'>
-        <img src='https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'></img>
-
-      </section>
-      <footer className='footer'>
-       <h1>
-        Project by <p>Islam Tashtanbekov</p>
-      </h1>
-      </footer>
-    </body>
-  );
+  return(
+    <div className='body'>
+      <Header />
+      <Main />
+      <Footer />
+      <div className='video-section'>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/iqoNoU-rm14" title="Max Brhon - Cyberpunk [NCS Release]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className='iframe'></iframe>
+      </div>
+    </div>
+  )
 }
 
 export default App;
